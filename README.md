@@ -57,3 +57,26 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+
+# Details of the Solution
+
+
+## 1st commit Details
+
+Created an angular User Todo list managemant system that has login, registration and user list at home page. This was done using following angular features
+* Initial pages of html and css/scss were completed
+* Assets were downloaded into the project
+* Components (no stand alone)
+* Pages folder contained the components for main routes
+* Service to do the HttpClient requets over a json file in assets folder
+* Routes were configured for the application
+* angular.json file enabled the assets filder for internal access
+* app.module.ts file used to provide services and include components
+* Todo interface was done in interfaces folder
+* @Input parameters used to support the child components dynamically and to drill down json data to child components
+
+
+
+
