@@ -1,0 +1,34 @@
+<div class="home-container">
+    <div class="header-section">
+
+        <div class="title-menu-section">
+
+            <img id="menu-icon" src="../../../assets/menu.png" alt="Menu Item"> 
+            <p class="title">LIST OF TODOs</p>
+    
+
+        </div>
+
+        <img id="filter-icon" src="../../../assets/filter.png" alt="Filter Icon">
+
+    </div>
+
+    <div class="todo-sections">
+
+
+        <div class="ng-container" *ngFor="let todo of todoList; let i = index">
+
+            <div class="each-todo">
+                <app-todo-card [todoCount]="i" [todo]="todo"></app-todo-card>
+            </div>
+    
+        </div>
+
+    </div>  
+
+    <div class="add-button">
+
+        <img src="../../../assets/plus.png" alt="Add Icon">
+    </div>
+
+</div>

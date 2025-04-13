@@ -1,0 +1,115 @@
+
+@import '../../../themes/themes.scss';
+
+.logo-todo {
+
+    width: 187px;
+    height: 180px;
+    margin: $zero-padding 94px;
+}
+
+.login-container {
+    background: $primary-color;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.25);
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    
+  }
+  .logo {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  .input-section {
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: $zero-padding $padding24;
+
+    align-items: center;
+    box-sizing: border-box;
+
+    .link-forgot-password {
+        width: 100%;
+        color: $secondary-color;
+        font-size: $font-size16;
+        position: relative;
+        text-align: right;
+        margin-bottom: $padding16;
+    }
+
+    .link-signup {
+        width: 100%;
+        color: $secondary-color;
+        font-size: $font-size16;
+        position: relative;
+        text-align: center;
+        margin-bottom: $padding16;
+        span {
+            color: $secondary-color;
+            cursor: pointer;
+        }
+    }
+
+    button {
+        font-size: 14px;
+        height: 48px;
+        width: 100%;
+        background-color: $secondary-color;
+        margin-bottom: $padding16;
+
+    }
+
+    .input-group {
+        width: 100%;
+
+        position: relative;
+        margin-bottom: 1rem;
+
+        input {
+            height: 38px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: $padding16;
+            border-radius: $border-radius12;
+            outline: none;
+            border: 1px solid $secondary-color;
+            padding-left: $padding16;
+            box-sizing: border-box;
+
+            &::placeholder {
+
+                font-size: $font-size16;
+                margin-left: $padding16;
+
+            }
+          }
+
+      }
+
+  }
+
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 35%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #555;
+  }
+  .links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+  }

@@ -1,0 +1,30 @@
+$primary-color: #F79E89;
+
+$secondary-color: rgba(39, 39, 39, 0.5);
+$white-color: #FFFFFF;
+$mini-primary-color: #F76C6A;
+
+
+
+//spacings
+$padding24: 24px;
+$padding16: 16px;
+$padding8: 8px;
+$zero-padding: 0px;
+
+//font-sizing
+$font-size12: 12px;
+$font-size16: 16px;
+$font-size36: 36px;
+
+//border-radius
+$border-radius12: 12px;
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }

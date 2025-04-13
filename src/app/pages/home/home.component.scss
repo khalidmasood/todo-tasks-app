@@ -1,0 +1,74 @@
+@import '../../../themes/themes.scss';
+
+.home-container {
+
+    box-sizing: border-box;
+    padding-left: $zero-padding $padding24;
+    height: 100vh;
+    .header-section {
+
+        display: flex; //default horizontal
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        margin-top: 24px;
+
+        #filter-icon {
+
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+        }
+    
+    
+        .title-menu-section {
+            display: flex;
+    
+            #menu-icon {
+    
+                width: 35px;
+                height: 35px;
+                cursor: pointer;
+            }
+    
+            .title {
+                /*position: absolute;
+                left: 20%;
+                transform: transformX(-20%);*/
+        
+                font-size: 24px;
+                color: $mini-primary-color;
+                margin: $zero-padding;
+                margin-left: 9px;
+                font-weight: 700;
+        
+            }
+    
+        }        
+
+    }
+    
+    .todo-sections {
+        margin-top: 17px;
+        max-height: 70%;
+        overflow-y: scroll;
+
+        .each-todo {
+            padding-top: $padding16;
+        }
+
+    }
+    .add-button {
+
+        position: absolute;
+        bottom: 2%;
+        right: 5%;
+
+        img {
+            width: 72px;
+            height: 72px;
+        }
+    }
+
+}
+

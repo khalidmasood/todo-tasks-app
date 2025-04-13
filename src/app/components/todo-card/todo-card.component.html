@@ -1,0 +1,19 @@
+    <div [ngClass]="todoCount % 2 === 0 ? 'lightColor': 'darkColor'"  class="todo-card-container">
+
+    <!--<div [ngClass]="{'lightColor' : todoCount % 2 != 0, 'darkColor': todoCount % 2 == 0}"  class="todo-card-container"> -->
+
+    <div class="header-section">
+        <p class="tile">{{todo.title}}</p>
+        <img src="../../../assets/clock.png" alt="Clock Item">
+
+    </div>
+    <p class="description">
+        {{todo.description}}
+    </p>
+    <p class="created-date">
+
+        {{todo.createdDate}}
+    </p>
+
+
+</div>

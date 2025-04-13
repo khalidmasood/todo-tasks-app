@@ -1,0 +1,63 @@
+@import '../../../themes/themes.scss';
+
+.todo-card-container {
+
+    color: $white-color;
+    border-radius: 12px;
+    padding: 6px $padding8 5px $padding16;
+    box-sizing: border-box;
+
+    .header-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .title {
+            margin: $zero-padding;
+            font-size: $font-size16;
+            font-weight: 600;
+        }
+    
+        img {
+            width: 16px;
+            height: 16px;
+        }
+    
+
+    }
+
+    .description {
+
+        font-size: 14px;
+
+        width: 90%;
+
+        overflow: hidden;
+        white-space: wrap;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+
+        -webkit-box-orient: vertical ;
+
+
+    }
+
+    .created-date {
+
+        font-size: 11px;
+    }
+    
+}
+
+.lightColor {
+
+    background: $primary-color;
+}
+
+.darkColor {
+
+    background: $mini-primary-color;
+}
+
