@@ -1,1 +1,22 @@
-<p>add-edit works!</p>
+
+<div class="add-edit-container">
+
+    <div class="add-edit-content">
+
+        <input [(ngModel)]="todoData.title" type="text" placeholder="Title">
+        <textarea [(ngModel)]="todoData.description" id="description" placeholder="Description" cols="30" rows ="10"></textarea>
+        <input [(ngModel)]="todoData.createdDate" type="date">
+        <input type="file" id="imageFile" placeholder="Add Image">
+        <label for="imageFile">
+
+            <div class="image-container">
+                <p>Add Image (Optional)</p>
+                <img src="../../../assets/image-upload.png" alt="image icon">
+            </div>
+
+        </label>
+        <div class="btn-submit">
+            {{buttonText}}
+        </div>
+    </div>
+</div>

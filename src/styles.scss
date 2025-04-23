@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:wgh@300,400,500,600,700&display=swap');
+@import '../src/themes/themes.scss';
+body,html{
+
+    font-family: 'Montserrat', sans-serif;
+    padding: $zero-padding;
+    box-sizing:border-box;
+    margin: $zero-padding;
+}
+
+.btn-submit{
+
+    background: $primary-color;
+    color: $white-color;
+    font-size:14px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+    border-radius: $border-radius12;
+    cursor: pointer;
+
+}

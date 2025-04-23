@@ -10,6 +10,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { TodoCardComponent } from './components/todo-card/todo-card.component';
 import { provideHttpClient } from '@angular/common/http';
 import { AddEditComponent } from './pages/add-edit/add-edit.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AddEditComponent } from './pages/add-edit/add-edit.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
 
   ],
   providers: [

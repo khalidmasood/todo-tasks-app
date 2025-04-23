@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TodoService } from '../../services/todo.service';
 import { Todo } from '../../interfaces/todo';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -15,7 +16,7 @@ export class HomeComponent implements OnInit{
   todoList: Array<Todo> = [];
 
 
-  constructor(private service: TodoService){}
+  constructor(private service: TodoService, private router : Router){}
 
   public  getData() {
 
@@ -37,6 +38,12 @@ export class HomeComponent implements OnInit{
     if (typeof window !== 'undefined' && window.document) {
       this.getData();
     }
+
+  }
+
+  redirectToAdd(){
+    this.router.navigateByUrl('add');
+
 
   }
 

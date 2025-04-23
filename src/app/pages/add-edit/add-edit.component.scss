@@ -1,0 +1,95 @@
+@import '../../../themes/themes.scss';
+
+.add-edit-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    .add-edit-content {
+        width: 100%;
+        height: 100%;
+        background: $primary-color;
+        margin-top: 90px;
+        border-radius: $border-radius-add-edit;
+        padding: 24px;
+        box-sizing: border-box;
+
+        input, textarea{
+            //border: none;
+            border: 1px solid $white-color;
+            outline: none;
+            margin-top: $padding16;
+            border-radius: $border-radius12;
+            width: 100%;
+            background: $primary-color;
+            color: $white-color;
+            font-size: 16px;
+            &::placeholder {
+                color: $white-color;
+            }
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+
+        input {
+            height: 48px;
+            padding: 0px $padding16;
+
+        }
+
+        #description {
+            resize: none;
+            padding: $padding16;
+            height: 55%;
+        }
+
+        input[type = "file"]
+        {
+            display: none;
+        }
+        label {
+            width: 100%;
+            .image-container
+            {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-radius: $border-radius12;
+                border: 1px solid $white-color;
+                padding: 0px $padding16;
+                margin-top: $padding16;
+                    img {
+                    width: 34px;
+                    height: 37px;
+                }
+            }
+            p {
+                font-size: $font-size16;
+                color: $white-color;
+                opacity: 0.5;
+            }
+
+        }
+   
+    }
+
+    input[type="date"]::-webkit-calendar-picker-indicator
+    {
+        background: url('../../../assets/calendar-32.png') no-repeat;
+        box-sizing: border-box;
+        padding-bottom: 10px;
+        height: 34px;
+        width: 36px;
+    }
+    .btn-submit {
+        background: $white-color;
+        color: $primary-color;
+        width: 100%;
+        align-items: center;
+        margin-top: $padding16;
+        font-weight: bold;
+
+    }
+
+
+}
