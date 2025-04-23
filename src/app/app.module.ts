@@ -9,6 +9,7 @@ import { RegisterComponent } from './pages/register/register.component';
 import { HomeComponent } from './pages/home/home.component';
 import { TodoCardComponent } from './components/todo-card/todo-card.component';
 import { provideHttpClient } from '@angular/common/http';
+import { AddEditComponent } from './pages/add-edit/add-edit.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { provideHttpClient } from '@angular/common/http';
     LoginComponent,
     RegisterComponent,
     HomeComponent,
-    TodoCardComponent
+    TodoCardComponent,
+    AddEditComponent
   ],
   imports: [
     BrowserModule,

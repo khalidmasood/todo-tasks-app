@@ -22,7 +22,6 @@ export class HomeComponent implements OnInit{
     var url = '../../../assets/mock/todos.json';
 
     this.service.getTodoList().subscribe( (data : any) => {
-      
 
       this.todoList = data;
 
@@ -34,7 +33,10 @@ export class HomeComponent implements OnInit{
 
   ngOnInit(): void {
 
-    var data = this.getData();
+    //to handle pre-render errors on ng build and serve
+    if (typeof window !== 'undefined' && window.document) {
+      this.getData();
+    }
 
   }
 
